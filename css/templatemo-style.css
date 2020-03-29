@@ -92,6 +92,11 @@ button:focus { outline: none; }
 	font-weight: 400;
 }
 
+.intro-subtitle {
+	font-size: 1em;
+	font-weight: 400;
+}
+
 .cd-hero-slider { height: 100vh; }
 
 .cd-hero-slider li { list-style: none; }
