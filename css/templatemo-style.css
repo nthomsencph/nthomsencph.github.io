@@ -89,12 +89,15 @@ button:focus { outline: none; }
 
 .cd-hero-slider .tm-site-name { 
 	font-size: 2em;
-	font-weight: 400;
+	font-weight: 700;
+	letter-spacing: 1em;
 }
 
 .intro-subtitle {
-	font-size: 1em;
+	font-size: 1.8em;
 	font-weight: 400;
+	color: white;
+	letter-spacing: 0.8em;
 }
 
 .cd-hero-slider { height: 100vh; }
@@ -104,7 +107,7 @@ button:focus { outline: none; }
 .cd-hero-slider li:last-child { background-size: auto; }
 
 .tm-bg-white-translucent {	
-	background-color: rgba(255,255,255,0.75);	
+	background-color: rgba(255,255,255,0.55);	
 }
 
 .tm-bg-white-translucent p { color: black; }
@@ -123,6 +126,12 @@ button:focus { outline: none; }
 .cd-hero-slider .tm-text { 
 	font-size: 1em;
 	line-height: 1.8; 
+}
+
+.tm-text-start {
+	font-size: 1em;
+	line-height: 1.8;
+	font-weight: 800; 
 }
 
 .tm-2-col-container {		
