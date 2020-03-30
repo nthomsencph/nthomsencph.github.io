@@ -1,4 +1,6 @@
 $(window).on("load",function(){
+  
+    
     "use strict";
     /*=========================================================================
         Preloader
@@ -40,6 +42,11 @@ $(window).on("load",function(){
       });
     });
 
+    const commentBox = require('commentbox.io');
+    commentBox('5735372633931776-proj', {
+      className : 'commentbox'
+    });
+
     /*=========================================================================
      Infinite Scroll
      =========================================================================*/
@@ -76,6 +83,8 @@ $(window).on("load",function(){
       }
 
     });
+
+
 
     $container.infinitescroll( 'unbind' );
 
@@ -268,5 +277,7 @@ $(function(){
             scrollTop : 0                       // Scroll to top of body
         }, 400);
     });
+
+    
 
 });
