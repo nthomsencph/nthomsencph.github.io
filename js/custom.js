@@ -42,11 +42,6 @@ $(window).on("load",function(){
       });
     });
 
-    const commentBox = require('commentbox.io');
-    commentBox('5735372633931776-proj', {
-      className : 'commentbox'
-    });
-
     /*=========================================================================
      Infinite Scroll
      =========================================================================*/
