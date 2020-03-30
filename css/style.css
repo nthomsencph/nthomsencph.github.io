@@ -70,7 +70,7 @@ img {
 }
 
 .background-blue {
-  background: #4A63E7;
+  background: rgb(62, 71, 95);
 }
 
 /*=================================================================*/
@@ -862,8 +862,9 @@ section.padding-60 {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 100%;
+  width: 80%;
 }
+
 .client-item img {
   display: inline-block;
 }
@@ -947,7 +948,7 @@ section.padding-60 {
 /*=================================================================*/
 .overlay {
   border-radius: 20px;
-  background: #4A63E7;
+  background: rgb(62, 71, 95);
   left: 0;
   top: 0;
   opacity: 0.9;
