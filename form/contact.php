@@ -7,7 +7,7 @@
 $from = 'Demo contact form <YOUR_EMAIL@DOMAIN.COM>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Demo contact form <YOUR_EMAIL@DOMAIN.COM>';
+$sendTo = 'Demo contact form <nicolaibthomsen@gmail.com>';
 
 // subject of the email
 $subject = 'New message from contact form';
@@ -17,7 +17,7 @@ $subject = 'New message from contact form';
 $fields = array('InputName' => 'Name', 'email' => 'InputEmail', 'InputMessage' => 'Message'); 
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Your message successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = "Thanks. I will get back to you soon!';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Please try again later';
@@ -34,7 +34,7 @@ try
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "You have a new message from your contact form\n=============================\n";
+    $emailText = "New NBT Github.io: new message \n=============================\n";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 
