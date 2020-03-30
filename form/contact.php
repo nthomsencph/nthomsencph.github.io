@@ -4,10 +4,10 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'Demo contact form <YOUR_EMAIL@DOMAIN.COM>';
+$from = 'Nicolai - Github <nicolaibthomsen@gmail.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Demo contact form <nicolaibthomsen@gmail.com>';
+$sendTo = 'Nicolai <nicolaibthomsen@gmail.com>';
 
 // subject of the email
 $subject = 'New message from contact form';
@@ -34,7 +34,7 @@ try
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "New NBT Github.io: new message \n=============================\n";
+    $emailText = "New NBT Github.io new message \n=============================\n";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 
