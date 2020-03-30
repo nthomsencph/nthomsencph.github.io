@@ -10,6 +10,7 @@ $(function () {
 
     // when the form is submitted
     $('#contact-form').on('submit', function (e) {
+        alert("This is alert box!");  // display string message
 
         // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
