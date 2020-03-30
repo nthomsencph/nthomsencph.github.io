@@ -712,7 +712,7 @@ section.padding-60 {
   margin-bottom: 25px;
 }
 .portfolio-filter li {
-  color: #888;
+  color: rgb(240, 240, 240);
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
@@ -1684,6 +1684,7 @@ section.padding-60 {
 
   .portfolio-filter {
     display: none;
+
   }
 
   .hero .cta h1 {
