@@ -7,7 +7,7 @@ $(function () {
 
     $('#contact-form').validator();
 
-
+    /*  
     // when the form is submitted
     $('#contact-form').on('submit', function (e) {
         alert("This is alert box!");  // display string message
@@ -44,4 +44,5 @@ $(function () {
             return false;
         }
     })
+    */
 });
