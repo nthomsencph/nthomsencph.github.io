@@ -42,6 +42,10 @@ img {
   height: auto;
 }
 
+#about img, #header img {
+  border-radius: 50%;
+}
+
 .text-center {
   text-align: center;
 }
@@ -734,118 +738,6 @@ section.padding-60 {
   margin-right: 1.5rem;
 }
 
-.price-item {
-  border: solid 1px #EFEFEF;
-  border-radius: 10px;
-  padding: 30px 0;
-}
-.price-item i {
-  background: #FFF;
-  font-size: 24px;
-  color: #FF5959;
-  display: block;
-  border-radius: 50%;
-  border: solid 1px #EFEFEF;
-  height: 55px;
-  line-height: 55px;
-  left: 50%;
-  top: -27.5px;
-  position: absolute;
-  text-align: center;
-  width: 55px;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-.price-item .price-icon + .plan {
-  margin-top: 25px;
-}
-.price-item .plan {
-  font-size: 12px;
-  color: #FFF;
-  background: #FF5959;
-  border-radius: 25px;
-  display: inline-block;
-  padding: 1px 9px;
-}
-.price-item .price {
-  font-size: 36px;
-  margin: 25px 0;
-}
-.price-item .price em {
-  font-size: 18px;
-  font-style: normal;
-  vertical-align: super;
-  margin-right: 4px;
-}
-.price-item .price span {
-  color: #888;
-  font-size: 12px;
-  font-weight: 400;
-}
-.price-item ul {
-  list-style: none;
-  padding-left: 0;
-  margin: -8px 0;
-}
-.price-item ul li {
-  line-height: 30px;
-}
-.price-item .btn {
-  margin-top: 30px;
-}
-.price-item.recommended {
-  color: #FFF;
-  background: #4A63E7;
-}
-.price-item.recommended .price {
-  color: #FFF;
-}
-.price-item.recommended .price span {
-  color: #FFF;
-}
-
-.testimonial-item {
-  border: solid 1px #EFEFEF;
-  border-radius: 10px;
-  padding: 30px 25px;
-}
-.testimonial-item .symbol {
-  font-weight: bold;
-  color: #FF5959;
-  font-size: 12px;
-  margin-bottom: 20px;
-  display: block;
-}
-.testimonial-item p {
-  margin-bottom: 0;
-}
-.testimonial-item .testimonial-details {
-  margin-top: 25px;
-}
-.testimonial-item .testimonial-details .thumb {
-  display: inline-block;
-  border-radius: 100%;
-  overflow: hidden;
-  height: 40px;
-  vertical-align: middle;
-  width: 40px;
-}
-.testimonial-item .testimonial-details .info {
-  display: inline-block;
-  margin-left: 20px;
-  vertical-align: middle;
-}
-.testimonial-item .testimonial-details .info h4 {
-  margin: 0;
-}
-.testimonial-item .testimonial-details .info span {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-}
 
 /*=================================================================*/
 /*                      CLIENTS                              
@@ -972,6 +864,10 @@ section.padding-60 {
 .icon-simple {
   color: #FF5959;
   font-size: 24px;
+}
+
+.portfolio-content code {
+  font-size: 1.2em;
 }
 
 #infscr-loading {
