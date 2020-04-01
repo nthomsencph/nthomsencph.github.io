@@ -46,7 +46,7 @@
 			<span></span>
 			<span></span>
 		</button>
-		<a href="index.html" class="logo"><img src="images/IMG_E0102.JPG" alt="Mee" /></a>
+		<a href="index.html" class="logo"><img src="images/PROFILE-PIC.png" alt="Mee" /></a>
 		<a href="index.html" class="site-title dot ml-2"></a>
 	</div>
 
@@ -56,9 +56,9 @@
 			<span aria-hidden="true">&times;</span>
 		</button>
 		<div class="header-inner d-flex align-items-start flex-column">
-			<a href="index.html"><img src="https://via.placeholder.com/70x70" alt="Mee" /></a>
-			<a href="index.html" class="site-title dot mt-3">Nicolai Thomsen</a>
-			<span class="site-slogan">MSc. Data Science</span>
+			<a href="index.html"><img src="images/PROFILE-PIC.png" alt="Mee" /></a>
+			<a href="index.html" id="name-title" class="site-title dot mt-3">Nicolai Thomsen</a>
+			<span class="site-slogan">MSc. DATA SCIENCE</span>
 			
 			<!-- navigation menu -->
 			<nav>
@@ -93,7 +93,7 @@
 	<main class="content float-right">
 
 		<!-- section hero -->
-		<section class="hero background parallax shadow-dark d-flex align-items-center" id="home" data-image-src="https://via.placeholder.com/900x600">
+		<section class="hero background parallax shadow-dark d-flex align-items-center" id="home" data-image-src="images/bg-pic.jpg">
 			<div class="cta mx-auto mt-2">
 				<h1 class="mt-0 mb-4">Hello<span class="dot"></span></h1>
 				<p class="mb-4">This site is my online resume and project portfolio, as well as a fun project in itself. More information is available on request. There's some useful code snippets too. Take a look around. Thanks for stopping by.</p> 
@@ -111,7 +111,7 @@
 
 			<div class="row">
 				<div class="col-md-3">
-					<img src="https://via.placeholder.com/150x150" alt="about" />
+					<img src="images/PROFILE-PIC.png" alt="about" />
 				</div>
 				<div class="col-md-9">
 					<p class="mb-0">I'm a graduate student at the cand.merc.it - data science programme at Copenhagen Business School. The programme combines hands-on data science with statistical and mathematical theory. I work as a graduate research assistant within the field of Natural Language Processing in the Department of Management, Society and Communication @ CBS. My focus in general is simply on becoming a (better) data scientist. There's several aspects of data science and I'm trying to get familiar with all of them, little by little.</p>
@@ -140,8 +140,133 @@
 
 			<div class="row mt-5">
 
+			<!-- skills filter (desktop) -->
+			<ui class="portfolio-filter">
+				<li class="current" data-filter="*">All Projects</li>
+				<li class="" data-filter=".python">Python Programming</li>
+				<li class="" data-filter=".analysis">Data Analysis</li>
+			</ui>
+
+
+			<!-- skills filter (mobile) -->
+			<div class="pf-filter-wrapper mb-4">
+				<select class="skills-filter-mobile">
+					<option value=".python">Python Programming</option>
+					<option value=".analysis">Data Analysis</option>
+				</select>
+			</div>
+
+			<!-- portolio wrapper -->
+			<div class="row portfolio-wrapper">
+			
+				
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item nlp">
+					<a href="work-single.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">visualization Art</h4>
+								<span class="term">Art, visualization</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item visualization ml">
+					<a href="work-single.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Apple USB</h4>
+								<span class="term">visualization, ml</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item analysis">
+					<a href="work-single.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Work Space</h4>
+								<span class="term">analysis</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item visualization">
+					<a href="work-single.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">visualization Bulb</h4>
+								<span class="term">visualization</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item nlp analysis">
+					<a href="work-single.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">iPhone 8</h4>
+								<span class="term">Art, analysis</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item visualization ml">
+					<a href="work-single.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Minimal Art</h4>
+								<span class="term">ml, visualization</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+			</div>
+
+			
+			<!--
 				<div class="col-md-6">
-					<!-- skill item -->
 					<div class="skill-item">
 						<div class="skill-info clearfix">
 							<h4 class="float-left mb-3 mt-0">Python programming</h4>
@@ -156,7 +281,6 @@
 				</div>
 
 				<div class="col-md-6">
-					<!-- skill item -->
 					<div class="skill-item">
 						<div class="skill-info clearfix">
 							<h4 class="float-left mb-3 mt-0">Data analysis</h4>
@@ -171,7 +295,6 @@
 				</div>
 
 				<div class="col-md-6">
-					<!-- skill item -->
 					<div class="skill-item">
 						<div class="skill-info clearfix">
 							<h4 class="float-left mb-3 mt-0">Statistical modeling</h4>
@@ -186,7 +309,6 @@
 				</div>
 
 				<div class="col-md-6">
-					<!-- skill item -->
 					<div class="skill-item">
 						<div class="skill-info clearfix">
 							<h4 class="float-left mb-3 mt-0">Computer science</h4>
@@ -199,7 +321,8 @@
 					</div>
 				</div>
 
-			</div>
+			
+				-->	
 		</section>
 
 		<!-- section services -->

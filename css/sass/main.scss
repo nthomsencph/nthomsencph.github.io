@@ -331,6 +331,27 @@ section {
     margin-right: 10px;
 }
 
+.skills-filter {
+	li {
+		color: rgb(0, 0, 0);
+		cursor: pointer;
+		font-size: 1.2em;
+		font-weight: 600;
+		position: relative;
+		&:hover {
+			color: rgb(23, 31, 49);
+			&:after {
+				height: 7px;
+			}
+		&.current {
+			background: #FF5959;
+			color: #FFF;
+			padding: 6px 14px 4px;
+			border-radius: 30px;
+		}
+	}
+}
+
 .portfolio-filter {
 	margin-bottom: 25px;
 	li {
@@ -624,4 +645,4 @@ section {
 .parallax {
 	background-size: cover;
 	background-attachment: fixed;
-}
+}}

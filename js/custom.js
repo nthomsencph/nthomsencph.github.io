@@ -20,6 +20,13 @@ $(window).on("load",function(){
         $container.isotope({ filter: filterValue });
     });
 
+    // FOR SOME REASON, SKILLSCONTAINER CANNOT FILTER ON THE SKILLS_FILTERVALUE.
+    $('.skills-filter').on( 'click', 'li', function() {
+        var skills_filterValue = $(this).attr('data-filter');
+        $skillscontainer.isotope({ filter: skills_filterValue });
+        console.log($skillscontainer.children());
+    });
+
     // change is-checked class on buttons
     $('.portfolio-filter').each( function( i, buttonGroup ) {
         var $buttonGroup = $( buttonGroup );
@@ -29,18 +36,44 @@ $(window).on("load",function(){
         });
     });
 
+    // WORKS
+    $('.skills-filter').each( function( i, buttonGroup ) {
+        var $skillsbuttonGroup = $( buttonGroup );
+        $skillsbuttonGroup.on( 'click', 'li', function() {
+            $skillsbuttonGroup.find('.current').removeClass('current');
+            $( this ).addClass('current');
+        });
+    });
+
     var $container = $('.portfolio-wrapper');
     $container.imagesLoaded( function() {
       $('.portfolio-wrapper').isotope({
           // options
-          itemSelector: '[class*="col-"]',
+          itemSelector: '.grid-item',
           percentPosition: true,
           masonry: {
               // use element for option
-              columnWidth: '[class*="col-"]'
+              columnWidth: '.grid-item'
           }
       });
     });
+
+
+    var $skillscontainer = $('.skills-wrapper');
+    $skillscontainer.imagesLoaded( function() {
+      $('.skills-wrapper').isotope({
+          // options
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          masonry: {
+              // use element for option
+              columnWidth: '.grid-item'
+          }
+          
+      });
+    });
+
+    
 
     /*=========================================================================
      Infinite Scroll
