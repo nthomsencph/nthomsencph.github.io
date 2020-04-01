@@ -135,16 +135,19 @@
 		<section id="skills" class="shadow-blue white-bg padding">
 			<h3 class="section-title">Competencies</h3>
 			<div class="spacer" data-height="20"></div>
-			<p class="mb-0">Competencies are difficult to quantify. Below are test results from DataCamp, LinkedIn etc. in various relevant categories. More will follow. </p>
-			<div class="spacer" data-height="20"></div>
+			<p class="mb-0">Competencies are difficult to quantify. Below are test results from DataCamp, LinkedIn etc. in various relevant categories. Please feel free to inquire further. More will follow. </p>
+			<div class="spacer" data-height="40"></div>
 
-			<div class="row mt-5">
-
+	
 			<!-- skills filter (desktop) -->
-			<ui class="portfolio-filter">
-				<li class="current" data-filter="*">All Projects</li>
-				<li class="" data-filter=".python">Python Programming</li>
-				<li class="" data-filter=".analysis">Data Analysis</li>
+			<ui class="skills-filter">
+				<!-- <li class="current" data-filter="*">All Projects</li> -->
+				<li class="first" data-filter=".python">Coding</li>
+				<li class="" data-filter=".analysis">Analysis</li>
+				<li class="" data-filter=".viz">Visualization</li>
+				<li class="" data-filter=".ml">ML / NN</li>
+				<li class="" data-filter=".pre">Preprocessing</li>
+				<li class="" data-filter=".pre">Utilization</li>
 			</ui>
 
 
@@ -156,50 +159,70 @@
 				</select>
 			</div>
 
-			<!-- portolio wrapper -->
-			<div class="row portfolio-wrapper">
+			<div class="spacer" data-height="40"></div>
+				<!-- skills wrapper -->
+			<div class="row skills-wrapper">
 			
-				
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item nlp">
-					<a href="work-single.html">
-						<div class="portfolio-item">
-							<div class="details">
-								<h4 class="title">visualization Art</h4>
-								<span class="term">Art, visualization</span>
-							</div>
-							<span class="plus-icon">+</span>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
-								<div class="mask"></div>
+				<!-- python skill item -->
+				<div class="col-md-12 col-sm-6 grid-item python">
+					<p class="mb-0">Through my academic background and extracurricular studies I've developed a some proffiency in a few languages, namely python, R, javascript, C#, and java. The only language I use for projects (excl. this website) is python, in which I am also certified on LinkedIn. Below the graphs is a list of relevant extracurricular courses. University programme courses can be found through the links the in Background section. I'm coding practically every day in one context or another. Therefore, the graphs and the courses below should be seen as a snapshot per March 2020. </p>
+					<div class="spacer" data-height="40"></div>
+					<h6 class="dot">DataCamp python programming assessment, March 2020</h6>
+					<img src="images/dc-py-assess.png" alt="Portfolio-title"/>
+					<div class="spacer" data-height="60"></div>
+					<h6>DataCamp R programming assessment, March 2020</h6>
+					<img src="images/r-dc-assess.png" alt="Portfolio-title"/>
+					<div class="spacer" data-height="60"></div>
+					<h6>Relevant extracurricular courses</h6>
+
+					<div class="col-md-12 course-list">
+						<div class="row">
+							<div class="col-md-6">
+								<ul class="">
+									<li><a href="https://learn.datacamp.com/courses/exploratory-data-analysis-in-python">Exploratory data analysis in Python</a></li>
+									<p class="codelist-item">Python / Pandas| DataCamp | 2020</p>
+									<li><a href="https://learn.datacamp.com/courses/intermediate-python-for-data-science">Intermediate Python for data science</a></li>
+									<p class="codelist-item">Python | DataCamp | 2020</p>
+									<li><a href="https://learn.datacamp.com/courses/python-data-science-toolbox-part-1">Python data science toolbox (Part 1)</a></li>
+									<p class="codelist-item">Python | DataCamp | 2020</p>
+									<li><a href="https://learn.datacamp.com/courses/correlation-and-regression-in-r">Correlation and regression in R</a></li>
+									<p class="codelist-item">R | DataCamp | 2020</p>
+									<li><a href="https://learn.datacamp.com/courses/arima-models-in-r">ARIMA models in R</a></li>
+									<p class="codelist-item">R | DataCamp | 2020</p>
+									<li><a href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/">Python for data science & ML bootcamp</a></li>
+									<p class="codelist-item">Python / SKlearn | Udemy | 2019</p>
+
+								</ul>
+
+							</div>	
+								
+							<div class="col-md-6">
+								<ul>
+									<li><a href="https://www.udemy.com/course/nlp-natural-language-processing-with-python/">Natural Language Processing with Python</a></li>
+									<p class="codelist-item">NLP / Python | Udemy | 2019</p>
+									<li><a href="https://www.udemy.com/course/complete-guide-to-tensorflow-for-deep-learning-with-python/">TensorFlow for deep learning</a></li>
+									<p class="codelist-item">TensorFlow / Keras | Udemy | 2019</p>
+									<li><a href="https://digitallibrary.sdsu.edu/islandora/object/sdsu%3A23090">Windows Programming</a></li>
+									<p class="codelist-item">C# | SDSU | 2018</p>
+									<li><a href="https://www.udemy.com/course/complete-csharp-masterclass/">Complete C# masterclass</a></li>
+									<p class="codelist-item">C# | Udemy | 2018</p>
+									<li><a href="https://www.udemy.com/course/the-complete-javascript-course/">Complete Javascript course</a></li>
+									<p class="codelist-item">JS / web dev | Udemy | 2017</p>
+									<li><a href="https://www.udemy.com/course/java-the-complete-java-developer-course/">Complete Java masterclass</a></li>
+									<p class="codelist-item">Java | Udemy | 2017</p>
+								</ul>
 							</div>
 						</div>
-					</a>
+					</div>
 				</div>
 
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item visualization ml">
+				<!-- analysis item -->
+				<div class="col-md-12 col-sm-6 grid-item analysis">
+					<p>The process of (exploratory) data analysis is something I find really enjoyable. It's always interesting to dive into new data and find out its properties. Through extracurricular courses (such as DataCamp's Exploratory Data Analysis in Python() and university courses, I've gathered a solid repetorie of techniques and tools to carry out data analysis. </p>
 					<a href="work-single.html">
-						<div class="portfolio-item">
+						<div class="skills-item">
 							<div class="details">
-								<h4 class="title">Apple USB</h4>
-								<span class="term">visualization, ml</span>
-							</div>
-							<span class="plus-icon">+</span>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item analysis">
-					<a href="work-single.html">
-						<div class="portfolio-item">
-							<div class="details">
-								<h4 class="title">Work Space</h4>
+								<h4 class="title">Skills item</h4>
 								<span class="term">analysis</span>
 							</div>
 							<span class="plus-icon">+</span>
@@ -211,118 +234,9 @@
 					</a>
 				</div>
 
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item visualization">
-					<a href="work-single.html">
-						<div class="portfolio-item">
-							<div class="details">
-								<h4 class="title">visualization Bulb</h4>
-								<span class="term">visualization</span>
-							</div>
-							<span class="plus-icon">+</span>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
 
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item nlp analysis">
-					<a href="work-single.html">
-						<div class="portfolio-item">
-							<div class="details">
-								<h4 class="title">iPhone 8</h4>
-								<span class="term">Art, analysis</span>
-							</div>
-							<span class="plus-icon">+</span>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item visualization ml">
-					<a href="work-single.html">
-						<div class="portfolio-item">
-							<div class="details">
-								<h4 class="title">Minimal Art</h4>
-								<span class="term">ml, visualization</span>
-							</div>
-							<span class="plus-icon">+</span>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
 
 			</div>
-
-			
-			<!--
-				<div class="col-md-6">
-					<div class="skill-item">
-						<div class="skill-info clearfix">
-							<h4 class="float-left mb-3 mt-0">Python programming</h4>
-							<span class="float-right">85%</span>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85">
-							</div>
-						</div>
-						<div class="spacer" data-height="50"></div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="skill-item">
-						<div class="skill-info clearfix">
-							<h4 class="float-left mb-3 mt-0">Data analysis</h4>
-							<span class="float-right">90%</span>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
-							</div>
-						</div>
-						<div class="spacer" data-height="50"></div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="skill-item">
-						<div class="skill-info clearfix">
-							<h4 class="float-left mb-3 mt-0">Statistical modeling</h4>
-							<span class="float-right">60%</span>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
-							</div>
-						</div>
-						<div class="spacer d-md-none d-lg-none" data-height="50"></div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="skill-item">
-						<div class="skill-info clearfix">
-							<h4 class="float-left mb-3 mt-0">Computer science</h4>
-							<span class="float-right">70%</span>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
-							</div>
-						</div>
-					</div>
-				</div>
-
-			
-				-->	
 		</section>
 
 		<!-- section services -->

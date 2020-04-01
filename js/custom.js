@@ -14,17 +14,20 @@ $(window).on("load",function(){
 
     /*=========================================================================
      Isotope
-     =========================================================================*/
+     =========================================================================*/  
+
+
+
     $('.portfolio-filter').on( 'click', 'li', function() {
         var filterValue = $(this).attr('data-filter');
         $container.isotope({ filter: filterValue });
+        $(".skills-wrapper").children().show();
+
     });
 
-    // FOR SOME REASON, SKILLSCONTAINER CANNOT FILTER ON THE SKILLS_FILTERVALUE.
     $('.skills-filter').on( 'click', 'li', function() {
         var skills_filterValue = $(this).attr('data-filter');
         $skillscontainer.isotope({ filter: skills_filterValue });
-        console.log($skillscontainer.children());
     });
 
     // change is-checked class on buttons
@@ -62,6 +65,7 @@ $(window).on("load",function(){
     var $skillscontainer = $('.skills-wrapper');
     $skillscontainer.imagesLoaded( function() {
       $('.skills-wrapper').isotope({
+
           // options
           itemSelector: '.grid-item',
           percentPosition: true,
@@ -69,9 +73,15 @@ $(window).on("load",function(){
               // use element for option
               columnWidth: '.grid-item'
           }
-          
       });
     });
+
+    // Sets python as first skill value and hides rest. 
+    // Wrap this in a function somehow.
+    var skills_filterValue = $('.first').attr('data-filter');
+    $skillscontainer.isotope({ filter: skills_filterValue });
+    $('.first' ).addClass('current');
+    //$(".skills-wrapper").children().show();
 
     
 
