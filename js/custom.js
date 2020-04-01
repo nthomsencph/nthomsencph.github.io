@@ -21,13 +21,17 @@ $(window).on("load",function(){
     $('.portfolio-filter').on( 'click', 'li', function() {
         var filterValue = $(this).attr('data-filter');
         $container.isotope({ filter: filterValue });
-        $(".skills-wrapper").children().show();
 
     });
 
     $('.skills-filter').on( 'click', 'li', function() {
         var skills_filterValue = $(this).attr('data-filter');
         $skillscontainer.isotope({ filter: skills_filterValue });
+    });
+
+    $('.toggle-filter').on( 'click', 'li', function() {
+        var toggle_filterValue = $(this).attr('data-filter');
+        $togglecontainer.isotope({ filter: toggle_filterValue });
     });
 
     // change is-checked class on buttons
@@ -47,6 +51,17 @@ $(window).on("load",function(){
             $( this ).addClass('current');
         });
     });
+
+    // WORKS
+    $('.toggle-filter').each( function( i, buttonGroup ) {
+        var $togglebuttonGroup = $( buttonGroup );
+        $togglebuttonGroup.on( 'click', 'li', function() {
+            $togglebuttonGroup.find('.current').removeClass('current');
+            $( this ).addClass('current');
+        });
+    });   
+
+    
 
     var $container = $('.portfolio-wrapper');
     $container.imagesLoaded( function() {
@@ -76,11 +91,33 @@ $(window).on("load",function(){
       });
     });
 
+    var $togglecontainer = $('.toggle-wrapper');
+    $togglecontainer.imagesLoaded( function() {
+      $('.toggle-wrapper').isotope({
+
+          // options
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          masonry: {
+              // use element for option
+              columnWidth: '.grid-item'
+          }
+      });
+    });
+
+
     // Sets python as first skill value and hides rest. 
     // Wrap this in a function somehow.
     var skills_filterValue = $('.first').attr('data-filter');
     $skillscontainer.isotope({ filter: skills_filterValue });
     $('.first' ).addClass('current');
+    //$(".skills-wrapper").children().show();
+
+      // Sets python as first skill value and hides rest. 
+    // Wrap this in a function somehow.
+    var toggle_filterValue = $('.primary').attr('data-filter');
+    $togglecontainer.isotope({ filter: toggle_filterValue });
+    $('.primary' ).addClass('current');
     //$(".skills-wrapper").children().show();
 
     

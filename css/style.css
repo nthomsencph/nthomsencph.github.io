@@ -878,6 +878,24 @@ section.padding-60 {
   display:inline;
 }
 
+.toggle-filter li, .toggle-filter p {
+  color: rgb(0, 0, 0);
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-weight: 1000;
+  position: relative;
+  display:inline;
+}
+
+.proff-title {
+  margin-bottom: 5px;
+}
+
+.toggle-filter li {
+  cursor: pointer;
+  padding: 5px 10px 10px;
+}
+
 .skills-filter li:not(:last-child) {
   margin-right: 2em;
 }
@@ -921,7 +939,15 @@ section.padding-60 {
   color: rgb(46, 47, 80);
 }
 
+.toggle-filter li:hover {
+  color: rgb(46, 47, 80);
+}
+
 .portfolio-filter li:hover:after {
+  height: 7px;
+}
+
+.toggle-filter li:hover:after {
   height: 7px;
 }
 
@@ -939,6 +965,13 @@ section.padding-60 {
   background: #FF5959;
   color: #FFF;
   padding: 6px 14px 4px;
+  border-radius: 30px;
+}
+
+.toggle-filter li.current {
+  background: #FF5959;
+  color: #FFF;
+  padding: 5px 10px 10px;
   border-radius: 30px;
 }
 
@@ -1075,7 +1108,13 @@ section.padding-60 {
 .portfolio-content code {
   font-size: 1.2em;
 }
+code, pre {
+  border-radius: 10px 10px 10px 10px;
+}
 
+pre {
+  background-color: rgb(24, 24, 24);
+}
 #infscr-loading {
   position: absolute;
   left: 50%;
