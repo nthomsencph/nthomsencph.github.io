@@ -504,6 +504,17 @@ section.padding-60 {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
+.volunteer-slider-item {
+  border: solid 1px #EFEFEF;
+  border-radius: 10px;
+  padding: 0 2% 0 2.5%
+}
+
+.volunter-slick-slider {
+  align-self: center;
+}
+
 .service-item h4, .service-item i {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -610,6 +621,13 @@ section.padding-60 {
 
 .pf-filter-wrapper {
   display: none;
+}
+
+.portfolio-intro a, .volunteer-slider-item a {
+  color: #FF5959;
+  outline: 0;
+  font-size: 1.1em;
+  font-weight: 400;
 }
 
 .portfolio-item {
@@ -1588,7 +1606,6 @@ pre {
 /*=================================================================*/
 .slick-slide {
   height: auto;
-  outline: none;
 }
 
 .slick-next, .slick-prev {
@@ -1596,7 +1613,6 @@ pre {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background: #000;
   border-radius: 0;
   top: calc(50% - 40px);
   z-index: 1;
@@ -1607,21 +1623,21 @@ pre {
 }
 
 .slick-next:hover, .slick-next:focus, .slick-prev:hover, .slick-prev:focus {
-  background: #000;
+  background:  #FF5959;
 }
 
 .slick-prev {
   left: 0;
 }
 .slick-prev:hover {
-  background: #000;
+  background:  #FF5959;
 }
 
 .slick-next {
   right: 0;
 }
 .slick-next:hover {
-  background: #000;
+  background: #FF5959 ;
 }
 
 .slick-next:before, .slick-next:after {

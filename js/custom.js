@@ -16,8 +16,6 @@ $(window).on("load",function(){
      Isotope
      =========================================================================*/  
 
-
-
     $('.portfolio-filter').on( 'click', 'li', function() {
         var filterValue = $(this).attr('data-filter');
         $container.isotope({ filter: filterValue });
@@ -105,20 +103,17 @@ $(window).on("load",function(){
       });
     });
 
-
     // Sets python as first skill value and hides rest. 
     // Wrap this in a function somehow.
     var skills_filterValue = $('.first').attr('data-filter');
     $skillscontainer.isotope({ filter: skills_filterValue });
     $('.first' ).addClass('current');
-    //$(".skills-wrapper").children().show();
 
-      // Sets python as first skill value and hides rest. 
+      // Sets academic as first background value and hides rest. 
     // Wrap this in a function somehow.
     var toggle_filterValue = $('.primary').attr('data-filter');
     $togglecontainer.isotope({ filter: toggle_filterValue });
     $('.primary' ).addClass('current');
-    //$(".skills-wrapper").children().show();
 
     
 
@@ -209,11 +204,10 @@ $(window).on("load",function(){
 $(document).on('ready', function() {
     "use strict";
 
-    $('.testimonials-wrapper').slick({
+    $('.volunteer-slick-slider').slick({
       dots: true,
-      arrows: false,
-      slidesToShow: 2,
-      slidesToScroll: 2,
+      infinite: false,
+      slidesToShow: 1,
       responsive: [
         {
           breakpoint: 768,
@@ -226,34 +220,6 @@ $(document).on('ready', function() {
         }
       ]
     });
-
-    $('.clients-wrapper').slick({
-      dots: false,
-      arrows: false,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            dots: false,
-            arrows: false,
-          }
-        },
-        {
-          breakpoint: 425,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: false,
-          }
-        }
-      ]
-    });
-
 });
 
 $(function(){
