@@ -218,6 +218,11 @@ header.left .mCustomScrollBox {
   width: 100%;
   overflow: visible;
 }
+
+.render-shell {
+  border-radius: 20%;
+}
+
 header.left .mCSB_inside > .mCSB_container {
   margin-right: 0;
   min-height: 99.91%;
@@ -477,8 +482,14 @@ section.padding-60 {
 }
 
 /*=================================================================*/
+/*                      GIST                           
+/*=================================================================*/
+
+.gist { font-size:20px !important; }
+/*=================================================================*/
 /*                      SKILLS                              
 /*=================================================================*/
+
 .skill-item .skill-info span {
   font-size: 14px;
 }
@@ -623,7 +634,7 @@ section.padding-60 {
   display: none;
 }
 
-.portfolio-intro a, .volunteer-slider-item a {
+.portfolio-intro a, .volunteer-slider-item a, .analysis-skills a, .python a{
   color: #FF5959;
   outline: 0;
   font-size: 1.1em;
@@ -925,6 +936,11 @@ section.padding-60 {
 .course-list li {
   font-weight: 800;
   color: black;
+}
+
+.course-list a {
+  color: black;
+  font-weight: 600;
 }
 
 .skills-wrapper img {
