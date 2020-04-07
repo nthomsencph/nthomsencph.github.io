@@ -488,9 +488,11 @@ section.padding-60 {
   padding: 60px 50px;
 }
 
-.section-title {
+#section-title-cert {
   margin: 0;
+  cursor: pointer;
 }
+
 .section-title:after {
   content: "";
   background: #FF5959;
