@@ -24,15 +24,17 @@
 
 	<style type="text/css">
 
-		.gist, .gist iframe, .gist-file, .gist-meta, .gist-data, .blob-code-inner, .render-container, .is-embedded html {
+		.gist, .iframe, .render-viewer, .gist-file, .gist-meta, .gist-data, .blob-code-inner, .render-container, .is-embedded {
 			font: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
 			background-color:#ffffff !important;
 			border: none !important; 
 			border-radius: 0;
 			border-bottom: none;
-			overflow-x: auto !important;
+			overflow-x: hidden !important;
 			max-width: 100% !important;
-			overflow: auto !important;
+			overflow: hidden !important;
+			width: 100%;
+			align-self: center;
 
 
 		}
@@ -151,14 +153,15 @@
 		<section id="skills" class="shadow-blue white-bg padding">
 			<h3 class="section-title">Competencies</h3>
 			<div class="spacer" data-height="20"></div>
-			<p class="mb-0">Competencies are difficult to quantify. Below are test results from DataCamp, LinkedIn etc. in various relevant categories. Please feel free to inquire further. More will follow. </p>
+			<p class="mb-0">Competencies are difficult to quantify. Below are test results from DataCamp, LinkedIn etc. in various relevant categories. <b class="bold-statement">Pick a category below to learn more.</b> </p>
 			<div class="spacer" data-height="40"></div>
 
 	
 			<!-- skills filter (desktop) -->
 			<ui class="skills-filter">
 				<!-- <li class="current" data-filter="*">All Projects</li> -->
-				<li class="first" data-filter=".python">Coding</li>
+				<li class="first" data-filter=".none">None</li>
+				<li class="" data-filter=".python">Coding</li>
 				<li class="" data-filter=".analysis-skills">Analysis</li>
 				<li class="" data-filter=".viz">Visualization</li>
 				<li class="" data-filter=".ml">ML / NN</li>
@@ -234,12 +237,15 @@
 
 				<!-- analysis item -->
 				<div class="col-md-12 col-sm-6 grid-item analysis-skills">
-					<p>The process of (exploratory) data analysis is something I find really enjoyable. It's always interesting to dive into new data and find out its properties. Through extracurricular courses (such as DataCamp's Exploratory Data Analysis in Python) and university courses, I've gathered a solid repetorie of techniques and tools to carry out different kinds of data analysis. As much of understanding data is rooted in statistical knowledge, I've included some DataCamp assessments on this too</p>
-					<p>Below I run through a simple example of data analysis on a randomly chosen dataset of <a href="https://ec.europa.eu/eurostat/data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_nPqeVbPXRmWQ&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2" target="_blank">female population per year in European countries, demo_gind_2_Data</a>. Let's say the aim is simply to dig around and do some exploratory analysis. Note that I've removed all lines where I look through the data to save space. See the Jupyter notebook <a>here</a> </p>
-					<div class="spacer" data-height="60"></div>
+					<p>The process of (exploratory) data analysis is something I find really enjoyable. It's always interesting to dive into new data and find out its properties. Through extracurricular courses (such as DataCamp's Exploratory Data Analysis in Python) and university courses, I've gathered a solid repetorie of techniques and tools to carry out different kinds of data analysis. As much of understanding data is rooted in statistical knowledge, I've included some DataCamp assessments on this below. </p>
+					<p>Instead of running through a project below, I'll simply refer to the portfolio projects. In analyses I rely on Pandas, Numpy, Matplotlib, SciPy, Statsmodel in R, Plotly and SKlearn for cluster analysis. </p>
+					<div class="spacer" data-height="30"></div>
+					<!-- Embedded gist
 					<div class="">
-						<script src="https://gist.github.com/nthomsencph/82e775ccee8c737bb9a31d15982f6c62.js"></script>
-					</div>
+						<script style="overflow:hidden" scrolling="no" src="https://gist.github.com/nthomsencph/82e775ccee8c737bb9a31d15982f6c62.js"></script>
+					</div >-->
+					<h6>DataCamp's <a href="https://assessment.datacamp.com/data-manipulation-with-python" target="_blank"><b>Data Manipulation with Python</b></a> assessment, April 2020</h6>
+					<img src="images/data-mani-dc.png" alt="Portfolio-title"/>
 					<div class="spacer" data-height="60"></div>
 					<h6>DataCamp's <a href="https://assessment.datacamp.com/statistics-fundamentals-with-python" target="_blank"><b>Statistics Fundamentals with Python</b></a> assessment, March 2020</h6>
 					<img src="images/stats-dc-assess.png" alt="Portfolio-title"/>
@@ -247,8 +253,40 @@
 					<h6>DataCamp's <a href="https://assessment.datacamp.com/understanding-and-interpreting-data" target="_blank"><b>Understanding & Interpreting Data</b></a> assessment, March 2020</h6>
 					<img src="images/understanding-data-dc.png" alt="Portfolio-title"/>
 					<div class="spacer" data-height="60"></div>
-				</div>
 
+					<h6>Relevant extracurricular courses</h6>
+
+					<div class="col-md-12 course-list">
+						<div class="row">
+							<div class="col-md-6">
+								<ul class="">
+									<li><a href="https://learn.datacamp.com/courses/exploratory-data-analysis-in-python">Exploratory data analysis in Python</a></li>
+									<p class="codelist-item">Python / Pandas| DataCamp | 2020</p>
+									<li><a href="https://learn.datacamp.com/courses/intermediate-python-for-data-science">Intermediate Python for data science</a></li>
+									<p class="codelist-item">Python | DataCamp | 2020</p>
+
+								</ul>
+
+							</div>	
+								
+							<div class="col-md-6">
+								<ul>
+									<li><a href="https://learn.datacamp.com/courses/python-data-science-toolbox-part-1">Python data science toolbox (Part 1)</a></li>
+									<p class="codelist-item">Python | DataCamp | 2020</p>
+									<li><a href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/">Python for data science & ML bootcamp</a></li>
+									<p class="codelist-item">Python / SKlearn | Udemy | 2019</p>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				
+				<!-- analysis item -->
+				<div class="col-md-12 col-sm-6 grid-item analysis-skills">
+					
+				</div>
 
 
 			</div>
@@ -619,14 +657,6 @@
 					</div>
 				</div>
 
-				<div class="col-md-3">
-					<!-- client item -->
-					<div class="client-item">
-						<div class="inner">
-							<img src="https://via.placeholder.com/143x20" alt="client-name" />
-						</div>
-					</div>
-				</div>
 
 			</div>
 

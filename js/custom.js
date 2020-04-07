@@ -107,15 +107,15 @@ $(window).on("load",function(){
     // Wrap this in a function somehow.
     var skills_filterValue = $('.first').attr('data-filter');
     $skillscontainer.isotope({ filter: skills_filterValue });
-    $('.first' ).addClass('current');
+    $('.first' ).addClass('current').hide();
+
+    
 
       // Sets academic as first background value and hides rest. 
     // Wrap this in a function somehow.
     var toggle_filterValue = $('.primary').attr('data-filter');
     $togglecontainer.isotope({ filter: toggle_filterValue });
     $('.primary' ).addClass('current');
-
-    
 
     /*=========================================================================
      Infinite Scroll
