@@ -126,6 +126,22 @@ $(window).on("load",function(){
       $(".content-section-cert").toggle();
     });
 
+    
+    $("#section-title-skills").click(function () {
+      $(".content-section-skills").toggle();
+    });
+
+    $("#section-title-aca").click(function () {
+      $(".content-section-aca").toggle();
+    });
+
+    $("#section-title-res").click(function () {
+      $("#content-section-res").toggle();
+
+    });
+
+
+
     /*=========================================================================
      Infinite Scroll
      =========================================================================*/
