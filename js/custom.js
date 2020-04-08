@@ -123,20 +123,20 @@ $(window).on("load",function(){
 
 
     $("#section-title-cert").click(function () {
-      $(".content-section-cert").toggle();
+      $(".content-section-cert").slideToggle();
     });
-
     
     $("#section-title-skills").click(function () {
-      $(".content-section-skills").toggle();
+      $(".content-section-skills").slideToggle();
     });
 
     $("#section-title-aca").click(function () {
-      $(".content-section-aca").toggle();
+      $(".content-section-aca").slideToggle();
     });
 
     $("#section-title-res").click(function () {
-      $("#content-section-res").toggle();
+      $("#content-section-res").slideToggle();
+
 
     });
 

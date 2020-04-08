@@ -798,6 +798,11 @@ section.padding-60 {
   opacity: 0.9;
 }
 
+.plus-minus {
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .skills-item:hover .mask {
   opacity: 0.9;
 }
@@ -816,6 +821,10 @@ section.padding-60 {
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1.1);
+}
+
+#content-section-res { 
+  display: none; 
 }
 
 .portfolio-item:hover .details h4, .portfolio-item:hover .details span {
