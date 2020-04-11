@@ -420,7 +420,7 @@ main.content.push {
 }
 .hero .cta h1 {
   color: #FFF;
-  font-size: 60px;
+  font-size: 2em;
   line-height: 0.7;
 }
 .hero .cta h1 .dot:after {
@@ -484,7 +484,7 @@ section.padding-60 {
   padding: 60px 50px;
 }
 
-#section-title-cert, #section-title-skills, #section-title-aca, #section-title-res {
+#section-title-cert, #section-title-skills, #section-title-aca, #section-title-res, #section-title-proj {
   margin: 0;
   cursor: pointer;
 }
@@ -798,9 +798,11 @@ section.padding-60 {
   opacity: 0.9;
 }
 
-.plus-minus {
+.open-text {
   margin-left:auto;
   margin-right:auto;
+  font-size: 1.1em;
+  margin-top: 1.6em
 }
 
 .skills-item:hover .mask {
@@ -823,13 +825,21 @@ section.padding-60 {
   transform: scale(1.1);
 }
 
-#content-section-res { 
+#content-section-res, .content-section-skills, #content-section-proj, .content-section-aca, .content-section-cert { 
   display: none; 
 }
 
+.cta h1 {
+  font-size: 1.5em;
+}
 .portfolio-item:hover .details h4, .portfolio-item:hover .details span {
   opacity: 1;
   transform: translateY(0);
+}
+
+.volunteer-slick-slider slick-active {
+  width: auto;
+
 }
 
 .skills-item:hover .details h4, .skills-item:hover .details span {

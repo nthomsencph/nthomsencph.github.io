@@ -124,21 +124,32 @@ $(window).on("load",function(){
 
     $("#section-title-cert").click(function () {
       $(".content-section-cert").slideToggle();
+      $(".open-text").fadeToggle();
     });
     
     $("#section-title-skills").click(function () {
       $(".content-section-skills").slideToggle();
+      $(".open-text").fadeToggle();
     });
 
     $("#section-title-aca").click(function () {
       $(".content-section-aca").slideToggle();
+      $(".primary").click();
+      $(".open-text").fadeToggle();
     });
 
     $("#section-title-res").click(function () {
       $("#content-section-res").slideToggle();
-
-
+      $(".open-text").fadeToggle();
+      $(".open-text").fadeToggle();
     });
+
+    $("#section-title-proj").click(function () {
+      $("#content-section-proj").slideToggle();
+      $(".open-text").fadeToggle();
+      $(".current").click();
+    });
+
 
 
 

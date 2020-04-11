@@ -22,25 +22,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-	<style type="text/css">
-
-		.gist, .iframe, .render-viewer, .gist-file, .gist-meta, .gist-data, .blob-code-inner, .render-container, .is-embedded {
-			font: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
-			background-color:#ffffff !important;
-			border: none !important; 
-			border-radius: 0;
-			border-bottom: none;
-			overflow-x: hidden !important;
-			max-width: 100% !important;
-			overflow: hidden !important;
-			width: 100%;
-			align-self: center;
-
-
-		}
-		
-	</style>
-
 	
 
 
@@ -78,7 +59,7 @@
 		<button type="button" class="close" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		</button>
-		<div class="header-inner d-flex align-items-start flex-column">
+		<div class="header-inner d-flex align-items-start flex-column" >
 			<a href="index.html"><img src="images/PROFILE-PIC.png" alt="Mee" /></a>
 			<a href="index.html" id="name-title" class="site-title dot mt-3">Nicolai Thomsen</a>
 			<span class="site-slogan">MSc. DATA SCIENCE</span>
@@ -115,8 +96,8 @@
 		<!-- section hero -->
 		<section class="hero background parallax shadow-dark d-flex align-items-center" id="home" data-image-src="images/bg-pic.jpg">
 			<div class="cta mx-auto mt-2">
-				<h1 class="mt-0 mb-4">Hello<span class="dot"></span></h1>
-				<p class="mb-4">This site is my online resume and project portfolio, as well as a fun project in itself. More information is available on request. There's some useful code snippets too. Take a look around. Thanks for stopping by.</p> 
+				<h1 class="mt-0 mb-4 intro-title">Hello<span class="dot"></span></h1>
+				<p class="mb-4">This site is my online resume and project portfolio, as well as a fun project in itself. More information is available on request. The site is still a WIP, as of April 2020. Thanks for stopping by.</p> 
 				<a href="#works" class="btn btn-default btn-lg mr-3"><i class="icon-grid"></i>View Portfolio</a>
 				<div class="spacer d-md-none d-lg-none d-sm-none" data-height="10"></div>
 				<a href="#contact" class="btn btn-border-light btn-lg"><i class="icon-envelope"></i>Contact</a>
@@ -151,11 +132,14 @@
 
 		<!-- section skills -->
 		<section id="skills" class="shadow-blue white-bg padding-50">
-			<h3 id="section-title-skills" class="section-title">Competencies</h3>
+			<div class="row" id="section-title-skills">
+				<h3 class="section-title col-md-10">Competencies</h3>	
+				<h3 class="open-text">Click to open.</h3>
+			</div>
 
 			<div class="content-section-skills">
 				<div class="spacer" data-height="20"></div>
-				<p class="mb-0">Competencies are difficult to quantify. Below are test results from DataCamp, LinkedIn etc. in various relevant categories. <b class="bold-statement">Pick a category below to learn more.</b> </p>
+				<p class="mb-0">Competencies are difficult to quantify. Below are test results from DataCamp as well as a list of relevant courses, in various relevant categories.<b class="bold-statement">Pick a category below to learn more.</b> </p>
 				<div class="spacer" data-height="40"></div>
 
 		
@@ -168,7 +152,7 @@
 					<li class="" data-filter=".viz">Visualization</li>
 					<li class="" data-filter=".ml">ML / NN</li>
 					<li class="" data-filter=".pre">Preprocessing</li>
-					<li class="" data-filter=".pre">Utilization</li>
+					<li class="" data-filter=".util">Utilization</li>
 				</ui>
 
 
@@ -186,7 +170,7 @@
 				
 					<!-- python skill item -->
 					<div class="col-md-12 col-sm-6 grid-item python">
-						<p class="mb-0">Through my academic background and extracurricular studies I've developed a some proffiency in a few languages, namely python, R, javascript, C#, and java. The only language I use for projects (excl. this website) is python, in which I am also certified on LinkedIn. Below the graphs is a list of relevant extracurricular courses. University programme courses can be found through the links the in Background section. I'm coding practically every day in one context or another. Therefore, the graphs and the courses below should be seen as a snapshot per March 2020. </p>
+						<p class="mb-0">Through my academic background and extracurricular studies I've developed some proffiency in a few languages, namely python, R, javascript, C#, and java. The only language I use for projects (excl. this website) is python, in which I am also certified on LinkedIn. Below the graphs is a list of relevant extracurricular courses. University programme courses can be found through the links the in Background section. I'm coding practically every day in one context or another. Therefore, the graphs and the courses below should be seen as a snapshot per March 2020. </p>
 						<div class="spacer" data-height="40"></div>
 						<h6 class="dot">DataCamp's <a href="https://assessment.datacamp.com/python-programming" target="_blank"><b>Python programming</b></a> assessment, March 2020</h6>
 						<img src="images/dc-py-assess.png" alt="Portfolio-title"/>
@@ -239,8 +223,8 @@
 
 					<!-- analysis item -->
 					<div class="col-md-12 col-sm-6 grid-item analysis-skills">
-						<p>The process of (exploratory) data analysis is something I find really enjoyable. It's always interesting to dive into new data and find out its properties. Through extracurricular courses (such as DataCamp's Exploratory Data Analysis in Python) and university courses, I've gathered a solid repetorie of techniques and tools to carry out different kinds of data analysis. As much of understanding data is rooted in statistical knowledge, I've included some DataCamp assessments on this below. </p>
-						<p>Instead of running through a project below, I'll simply refer to the portfolio projects. In analyses I rely on Pandas, Numpy, Matplotlib, SciPy, Statsmodel in R, Plotly and SKlearn for cluster analysis. </p>
+						<p>The process of (exploratory) data analysis is something I find really enjoyable. It's always interesting to dive into new data and discover its properties. Through extracurricular courses (such as DataCamp's Exploratory Data Analysis in Python) and university courses, I've gathered a solid repetorie of techniques and tools to carry out different kinds of data analysis. As much of understanding data is rooted in statistical knowledge, I've included some DataCamp assessments in this below. </p>
+						<p>Instead of running through a project below, I'll simply refer to the portfolio projects (Note: still WIP). In analyses I rely on Pandas, Numpy, Matplotlib, SciPy, Statsmodel in R, Plotly and SKlearn for cluster analysis. </p>
 						<div class="spacer" data-height="30"></div>
 						<!-- Embedded gist
 						<div class="">
@@ -285,9 +269,28 @@
 
 					</div>
 					
-					<!-- analysis item -->
-					<div class="col-md-12 col-sm-6 grid-item analysis-skills">
-						
+					<!-- viz skill item -->
+					<div class="col-md-12 col-sm-6 grid-item viz">
+						<p class="mb-0">WIP. TODO: Write block, insert assessments. </p>
+						<div class="spacer" data-height="40"></div>
+					</div>
+
+					<!-- ml skill item -->
+					<div class="col-md-12 col-sm-6 grid-item ml">
+						<p class="mb-0">WIP. TODO: Write block, insert assessments. </p>
+						<div class="spacer" data-height="40"></div>
+					</div>
+
+					<!-- pre skill item -->
+					<div class="col-md-12 col-sm-6 grid-item pre">
+						<p class="mb-0">WIP. TODO: Write block, insert assessments. </p>
+						<div class="spacer" data-height="40"></div>
+					</div>
+
+					<!-- pre skill item -->
+					<div class="col-md-12 col-sm-6 grid-item util">
+						<p class="mb-0">WIP. TODO: Write block, insert assessments. </p>
+						<div class="spacer" data-height="40"></div>
 					</div>
 
 
@@ -297,7 +300,11 @@
 
 		<!-- section services -->
 		<section id="services" class="shadow-dark color-white background-blue parallax padding-50">
-			<h3 id="section-title-cert" class="section-title">Volunteer work & certifications</h3>
+
+			<div class="row" id="section-title-cert">
+				<h3 class="section-title col-md-10">Volunteer work & certifications</h3>	
+				<h3 class="open-text">Click to open.</h3>
+			</div>
 
 
 			<div class="content-section-cert">
@@ -330,7 +337,6 @@
 				</div>
 				<div class="spacer" data-height="50"></div>
 				<h5>Volunteer work</h5>
-				<div class="volunteer-slick-slider">
 					<div class=volunteer-slider-item>
 						<div class="spacer" data-height="20"></div>
 						<h6>The Finn Nørgaard Association</h6>
@@ -338,6 +344,7 @@
 						<p>As a family friend of Finn, I've been a member of the association since its beginning. My active involvement has been to create (and maintain) the official website, create content and help out at events to the extent it is needed. I'm a big believer in the work of the association and I'm happy to be able to help it on its mission. </p>
 						<div class="spacer" data-height="20"></div>
 					</div>
+					<div class="spacer" data-height="30"></div>
 					<div class=volunteer-slider-item>
 						<div class="spacer" data-height="20"></div>
 						<h6>CBS Code</h6>
@@ -345,17 +352,20 @@
 						<p>My involvement as of March 2020 is as President although the organization is run by a board of equal vote. I have built the website and managed quite a lot of different aspects of the organization, including securing funding and onboarding new members. We hope to be able to continue the journey and grow the organization organically so we can leave a vibrant organization for the next team of board member after we graduate.</p>
 						<div class="spacer" data-height="20"></div>
 					</div>
+					<div class="spacer" data-height="30"></div>
 					<div class=volunteer-slider-item>
 						<div class="spacer" data-height="20"></div>
 						<h6>TEDxCopenhagen</h6>
 						<p><a href="https://tedxcopenhagen.dk/">TEDxCopenhagen</a> is the a chapter of the TEDx programme based in Copenhagen. They are a non-profit organisation of volunteers that independently plans and organises TED-like conferences and experiences in Copenhagen. During the preparations for their annual conference in October 2019, I helped out as a volunteer. As a avid TED Talk viewer, I was excited to be able to get a look behind the scenes and help make the conference come to life. </p>
 						<div class="spacer" data-height="10"></div>
+					</div>
+					<div class="spacer" data-height="30"></div>
+					<div class=volunteer-slider-item>
 						<h6>TalentGuiden</h6>
 						<p><a href="https://talentguiden.dk/">TalentGuiden</a> is an online blog platform that host spotlight articles on talented entrepreneurs, study tips and a lot more. My work at TalentGuiden consisted of writing articles about founders and companies. That meant in-depth research and interviews as well as writing, editing and coming up with article ideas.	</p>
 						<div class="spacer" data-height="20"></div>
 					</div>
 
-				</div>
 			</div>	
 
 		</section>
@@ -363,7 +373,11 @@
 		<!-- section experience -->
 		<section id="resume" class="shadow-blue white-bg padding-50">
 
-			<h3 id="section-title-aca" class="section-title">Background</h3>
+			<div id="section-title-aca" class="row">
+
+				<h3 class="section-title col-md-10 mb-10 mb-md-0">Background</h3>	
+				<h3 class="open-text">Click to open.</h3>
+			</div>
 			
 
 			<div class="content-section-aca">
@@ -475,167 +489,175 @@
 
 		<!-- section works -->
 		<section id="works" class="shadow-dark background-blue color-white padding-50">
-			<h3 class="section-title">Portfolio</h3>
-			<div class="spacer" data-height="20"></div>
-			<div class="portfolio-intro">
-				<p>In this section you will find some portfolio projects. Many of them are inspired by or extensions of DataCamp projects, Kaggle competitions and university assignments. Some are still works in progress. Almost all of them were fun to do. View in Github <a href="https://github.com/nthomsencph?tab=repositories" target="_blank" class="github-link">here</a>.</p>
-			</div>
-			<div class="spacer" data-height="80"></div>
 
-			<!-- portfolio filter (desktop) -->
-			<ul class="portfolio-filter list-inline">
-				<li class="current list-inline-item" data-filter="*">All Projects</li>
-				<li class="list-inline-item" data-filter=".analysis">Analysis</li>
-				<li class="list-inline-item" data-filter=".visualization">Visualization</li>
-				<li class="list-inline-item" data-filter=".ml">ML & Neural Nets</li>
-				<li class="list-inline-item" data-filter=".nlp">NLP</li>
-				<li class="list-inline-item" data-filter=".web">Web Dev.</li>
-			</ul>
+			<div id="section-title-proj" class="row">
 
-			<!-- portfolio filter (mobile) -->
-			<div class="pf-filter-wrapper mb-4">
-				<select class="portfolio-filter-mobile">
-					<option value="*">Everything</option>
-					<option value=".visualization">visualization</option>
-					<option value=".nlp">nlp</option>
-					<option value=".ml">ml</option>
-					<option value=".analysis">analysis</option>
-					<option value=".web">Web Dev.</option>
-				</select>
+				<h3 class="section-title col-md-10 mb-10 mb-md-0">Portfolio</h3>	
+				<h3 class="open-text">Click to open.</h3>
 			</div>
 
-			<!-- portolio wrapper -->
-			<div class="row portfolio-wrapper">
-				
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item nlp">
-					<a href="work-single.html">
-						<div class="portfolio-item">
-							<div class="details">
-								<h4 class="title">visualization Art</h4>
-								<span class="term">Art, visualization</span>
-							</div>
-							<span class="plus-icon">+</span>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
+			<div id="content-section-proj">
+				<div class="spacer" data-height="20"></div>
+				<div class="portfolio-intro">
+					<p>WIP: TODO: Insert projects</p><p>In this section you will find some portfolio projects. Many of them are inspired by or extensions of DataCamp projects, Kaggle competitions and university assignments. Some are still works in progress. Almost all of them were fun to do. See Github <a href="https://github.com/nthomsencph?tab=repositories" target="_blank" class="github-link">here</a>.</p>
 				</div>
+				<div class="spacer" data-height="80"></div>
 
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item visualization ml">
-					<a href="work-single.html">
-						<div class="portfolio-item">
-							<div class="details">
-								<h4 class="title">Apple USB</h4>
-								<span class="term">visualization, ml</span>
-							</div>
-							<span class="plus-icon">+</span>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item web">
-					<a href="work-single.html">
-						<div class="portfolio-item">
-							<div class="details">
-								<h4 class="title">Apple USB</h4>
-								<span class="term">visualization, ml</span>
-							</div>
-							<span class="plus-icon">+</span>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item analysis">
-					<a href="work-single.html">
-						<div class="portfolio-item">
-							<div class="details">
-								<h4 class="title">Work Space</h4>
-								<span class="term">analysis</span>
-							</div>
-							<span class="plus-icon">+</span>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item visualization">
-					<a href="work-single.html">
-						<div class="portfolio-item">
-							<div class="details">
-								<h4 class="title">visualization Bulb</h4>
-								<span class="term">visualization</span>
-							</div>
-							<span class="plus-icon">+</span>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item nlp analysis">
-					<a href="work-single.html">
-						<div class="portfolio-item">
-							<div class="details">
-								<h4 class="title">iPhone 8</h4>
-								<span class="term">Art, analysis</span>
-							</div>
-							<span class="plus-icon">+</span>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item visualization ml">
-					<a href="work-single.html">
-						<div class="portfolio-item">
-							<div class="details">
-								<h4 class="title">Minimal Art</h4>
-								<span class="term">ml, visualization</span>
-							</div>
-							<span class="plus-icon">+</span>
-							<div class="thumb">
-								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-			</div>
-			
-			<!-- more button -->
-			<div class="load-more text-center mt-4">
-				<a href="javascript:" class="btn btn-default"><i class="fas fa-circle-notch"></i> Load more</a>
-				<!-- numbered pagination (hidden for infinite scroll) -->
-				<ul class="portfolio-pagination list-inline d-none">
-					<li class="list-inline-item">1</li>
-					<li class="list-inline-item"><a href="works-2.html">2</a></li>
+				<!-- portfolio filter (desktop) -->
+				<ul class="portfolio-filter list-inline">
+					<li class="current list-inline-item" data-filter="*">All Projects</li>
+					<li class="list-inline-item" data-filter=".analysis">Analysis</li>
+					<li class="list-inline-item" data-filter=".visualization">Visualization</li>
+					<li class="list-inline-item" data-filter=".ml">ML & Neural Nets</li>
+					<li class="list-inline-item" data-filter=".nlp">NLP</li>
+					<li class="list-inline-item" data-filter=".web">Web Dev.</li>
 				</ul>
+
+				<!-- portfolio filter (mobile) -->
+				<div class="pf-filter-wrapper mb-4">
+					<select class="portfolio-filter-mobile">
+						<option value="*">Everything</option>
+						<option value=".visualization">visualization</option>
+						<option value=".nlp">nlp</option>
+						<option value=".ml">ml</option>
+						<option value=".analysis">analysis</option>
+						<option value=".web">Web Dev.</option>
+					</select>
+				</div>
+
+				<!-- portolio wrapper -->
+				<div class="row portfolio-wrapper">
+					
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item nlp">
+						<a href="work-single.html">
+							<div class="portfolio-item">
+								<div class="details">
+									<h4 class="title">visualization Art</h4>
+									<span class="term">Art, visualization</span>
+								</div>
+								<span class="plus-icon">+</span>
+								<div class="thumb">
+									<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item visualization ml">
+						<a href="work-single.html">
+							<div class="portfolio-item">
+								<div class="details">
+									<h4 class="title">Apple USB</h4>
+									<span class="term">visualization, ml</span>
+								</div>
+								<span class="plus-icon">+</span>
+								<div class="thumb">
+									<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item web">
+						<a href="work-single.html">
+							<div class="portfolio-item">
+								<div class="details">
+									<h4 class="title">Apple USB</h4>
+									<span class="term">visualization, ml</span>
+								</div>
+								<span class="plus-icon">+</span>
+								<div class="thumb">
+									<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item analysis">
+						<a href="work-single.html">
+							<div class="portfolio-item">
+								<div class="details">
+									<h4 class="title">Work Space</h4>
+									<span class="term">analysis</span>
+								</div>
+								<span class="plus-icon">+</span>
+								<div class="thumb">
+									<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item visualization">
+						<a href="work-single.html">
+							<div class="portfolio-item">
+								<div class="details">
+									<h4 class="title">visualization Bulb</h4>
+									<span class="term">visualization</span>
+								</div>
+								<span class="plus-icon">+</span>
+								<div class="thumb">
+									<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item nlp analysis">
+						<a href="work-single.html">
+							<div class="portfolio-item">
+								<div class="details">
+									<h4 class="title">iPhone 8</h4>
+									<span class="term">Art, analysis</span>
+								</div>
+								<span class="plus-icon">+</span>
+								<div class="thumb">
+									<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item visualization ml">
+						<a href="work-single.html">
+							<div class="portfolio-item">
+								<div class="details">
+									<h4 class="title">Minimal Art</h4>
+									<span class="term">ml, visualization</span>
+								</div>
+								<span class="plus-icon">+</span>
+								<div class="thumb">
+									<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+				
+				<!-- more button -->
+				<div class="load-more text-center mt-4">
+					<a href="javascript:" class="btn btn-default"><i class="fas fa-circle-notch"></i> Load more</a>
+					<!-- numbered pagination (hidden for infinite scroll) -->
+					<ul class="portfolio-pagination list-inline d-none">
+						<li class="list-inline-item">1</li>
+						<li class="list-inline-item"><a href="works-2.html">2</a></li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
@@ -692,17 +714,13 @@
 
 		</section>
 
-		<!-- section blog -->
+		<!-- section resources -->
 		<section id="blog" class="shadow-blue white-bg padding-50">
 
-			<div id="section-title-res" class="row section-header">
-			
+			<div id="section-title-res" class="row">
 
-				<div class="col-md-10 mb-10 mb-md-0">
-					<h3 class="section-title">Resources</h3></div>
-				<div class="plus-minus">
-					<!--<h3 class="plus-minus-ico-res">-</h3>-->
-				</div>
+				<h3 class="section-title col-md-10 mb-10 mb-md-0">Resources</h3>	
+				<h3 class="open-text">Click to open.</h3>
 			</div>
 
 			<div id="content-section-res">
@@ -794,7 +812,7 @@
 				<div class="col-md-8">
 
 					<!-- Contact Form -->
-					<form action="https://formspree.io/nicolaibthomsen@gmail.com" method="POST">
+					<form action="https://formspree.io/meqlrong" method="POST">
 
 						<input type="hidden" name="_subject" value="New submission!" />
 						
