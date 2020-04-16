@@ -2,12 +2,13 @@
     <head>
         <style type="text/css">
                     
-                table.blueTable {
+                table.blueTable, .centered {
                 border: 4px solid #1C6EA4;
                 background-color: #EEEEEE;
                 width: 20%;
                 text-align: center;
                 border-collapse: collapse;
+                margin: 0 auto;
                 }
                 table.blueTable td, table.blueTable th {
                 border: 1px solid #AAAAAA;
@@ -105,6 +106,37 @@
                     </table>
                 </div>
                 <div class="overlay"></div>
+
+                					<!-- Contact Form -->
+					<form class="centered" action="https://formspree.io/meqlrong" method="POST">
+
+						<input type="hidden" name="_subject" value="New submission!" />
+						
+						<div class="row">
+
+							<div class="column col-md-6">
+								<!-- Name input -->
+								<div class="form-group">
+									<input type="text" class="form-control" name="name" id="InputName" placeholder="Navn" required="required" data-error="Name is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+					
+							<div class="column col-md-12">
+
+								<!-- Message textarea -->
+								<div class="form-group">
+									<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Klage" required="required" data-error="Message is required."></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Send Button -->
+						<button type="submit" name="submit" id="submit" value="Send" class="btn btn-default"><i class="icon-paper-plane"></i>Send klage</button>
+
+					</form>
+					<!-- Contact Form end -->
             </section>
        </main>
     </body>
