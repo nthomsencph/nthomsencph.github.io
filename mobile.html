@@ -68,75 +68,43 @@
 			<h3 class="section-title">Get in touch</h3>
 			<div class="spacer" data-height="80"></div>
 
-			<div class="row">
-				
-				<div class="col-md-4 mb-4 mb-md-0">
-					<!-- contact info -->
-					<div class="contact-info mb-5">
-						<i class="icon-phone"></i>
-						<div class="details">
-							<h5>Phone</h5>
-							<span>Please inquire.</span>
-						</div>
-					</div>
-					<div class="contact-info mb-5">
-						<i class="icon-envelope"></i>
-						<div class="details">
-							<h5>Email address</h5>
-							<span>Please use form</span>
-						</div>
-					</div>
-					<div class="contact-info">
-						<i class="icon-location-pin"></i>
-						<div class="details">
-							<h5>Location</h5>
-							<span>Copenhagen, Denmark</span>
-						</div>
-					</div>
-				</div>
+			<div class="">
 
-				<div class="">
+                    <!-- Contact Form -->
+                    <form action="https://formspree.io/meqlrong" method="POST">
 
-					<!-- Contact Form -->
-					<form action="https://formspree.io/meqlrong" method="POST">
+                        <input type="hidden" name="_subject" value="New submission!" />
 
-						<input type="hidden" name="_subject" value="New submission!" />
-						
-						<div class="row">
+                            <div class=" ">
+                                <!-- Name input -->
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" id="InputName" placeholder="Your name" required="required" data-error="Name is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="">
+                                <!-- Email input -->
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="InputEmail" name="_replyto" placeholder="Email address" required="required" data-error="Email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                    
+                            <div class="">
 
-							<div class=" ">
-								<!-- Name input -->
-								<div class="form-group">
-									<input type="text" class="form-control" name="name" id="InputName" placeholder="Your name" required="required" data-error="Name is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-							
-							<div class="">
-								<!-- Email input -->
-								<div class="form-group">
-									<input type="email" class="form-control" id="InputEmail" name="_replyto" placeholder="Email address" required="required" data-error="Email is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-					
-							<div class="">
+                                <!-- Message textarea -->
+                                <div class="form-group">
+                                    <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Message" required="required" data-error="Message is required."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
 
-								<!-- Message textarea -->
-								<div class="form-group">
-									<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Message" required="required" data-error="Message is required."></textarea>
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-						</div>
+                            <!-- Send Button -->
+                            <button type="submit" name="submit" id="submit" value="Send" class="btn btn-default"><i class="icon-paper-plane"></i>Send Message</button>
 
-						<!-- Send Button -->
-						<button type="submit" name="submit" id="submit" value="Send" class="btn btn-default"><i class="icon-paper-plane"></i>Send Message</button>
-
-					</form>
-					<!-- Contact Form end -->
-				</div>
-
+                    </form>
+                        <!-- Contact Form end -->
 			</div>
 
 		</section>
