@@ -37,9 +37,18 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  text-justify: auto;
+  text-align: justify;
+}
+
 img {
   max-width: 100%;
-  height: auto;
+  height: auto; 
+}
+
+.header-img {
+  display: block; 
 }
 
 #header img {
@@ -49,8 +58,8 @@ img {
 
 #about img {
   border-radius: 50%;
-  width: 80%;
-  height: 52%;
+  width: 70%;
+  height: 60%;
 
 }
 

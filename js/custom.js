@@ -27,7 +27,7 @@ $(window).on("load",function(){
         $skillscontainer.isotope({ filter: skills_filterValue });
     });
 
-    $('.toggle-filter').on( 'click', 'li', function() {
+    $('.toggle-filter').on( 'click', 'a', function() {
         var toggle_filterValue = $(this).attr('data-filter');
         $togglecontainer.isotope({ filter: toggle_filterValue });
     });
