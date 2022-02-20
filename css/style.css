@@ -26,8 +26,8 @@
   max-height: 50%; }
   @media screen and (min-width: 300px) {
     .menu {
-      max-width: 20vw;
-      max-height: 20vh; } }
+      max-width: 60vw;
+      max-height: 60vh; } }
 
 .main-menu {
   cursor: pointer; }
