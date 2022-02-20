@@ -18,12 +18,12 @@
   padding: 24px; }
 
 .menu {
-  width: auto;
-  height: auto;
+  width: 20%;
+  height: 20%;
   stroke-linecap: round;
   stroke-linejoin: round;
-  max-width: 792px;
-  max-height: 100%; }
+  max-width: 30%;
+  max-height: 30%; }
   @media screen and (min-width: 512px) {
     .menu {
       max-width: 65vw;
